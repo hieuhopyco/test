@@ -1,4 +1,4 @@
-package test.question.dataMgr;
+package test.question1;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;

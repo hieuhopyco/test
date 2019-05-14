@@ -1,4 +1,4 @@
-package test.model;
+package test.question3.model;
 
 import java.util.List;
 
@@ -12,9 +12,6 @@ public class Bill {
 
         final double totalBillAmountAfterPercentDiscount = products.stream().mapToDouble(o -> o.getPriceAfterDiscount(percentDiscount)).sum();
         final double amountBaseDiscount = (int) totalBillAmountAfterPercentDiscount / 100 * 5;
-
-        System.out.println("totalBillAmountAfterPercentDiscount: " + totalBillAmountAfterPercentDiscount);
-        System.out.println("amountBaseDiscount: " + amountBaseDiscount);
 
         return totalBillAmountAfterPercentDiscount - amountBaseDiscount;
     }

@@ -7,7 +7,7 @@ import java.util.HashMap;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
-import test.question.dataMgr.DataLoadAndStore;
+import test.question1.DataLoadAndStore;
 
 
 public class DataLoadAndStoreTest {

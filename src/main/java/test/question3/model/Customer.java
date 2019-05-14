@@ -1,8 +1,8 @@
-package test.model;
+package test.question3.model;
 
 import java.util.Date;
 
-import test.util.DateTimeUtils;
+import test.question3.util.DateTimeUtils;
 
 public class Customer extends User {
     public Customer() { }

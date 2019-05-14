@@ -1,4 +1,4 @@
-package test.model;
+package test.question3.model;
 
 public class GroceryProduct extends Product {
     public GroceryProduct() { }

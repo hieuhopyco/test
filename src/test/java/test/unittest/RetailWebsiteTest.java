@@ -10,15 +10,15 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import test.model.Affiliate;
-import test.model.Bill;
-import test.model.Customer;
-import test.model.Employee;
-import test.model.GroceryProduct;
-import test.model.NomalProduct;
-import test.model.Product;
-import test.model.User;
-import test.question.retail.website.RetailWebsite;
+import test.question3.RetailWebsite;
+import test.question3.model.Affiliate;
+import test.question3.model.Bill;
+import test.question3.model.Customer;
+import test.question3.model.Employee;
+import test.question3.model.GroceryProduct;
+import test.question3.model.NomalProduct;
+import test.question3.model.Product;
+import test.question3.model.User;
 
 public class RetailWebsiteTest {
     private List<Product> products;

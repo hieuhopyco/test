@@ -1,4 +1,4 @@
-package test.model;
+package test.question3.model;
 
 public abstract class Product {
     private long id;
