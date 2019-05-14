@@ -1,9 +1,0 @@
-test\questions\Question3.class
-test\util\DateTimeUtils.class
-test\model\Category.class
-test\model\Product.class
-test\model\Bill.class
-test\model\User.class
-test\questions\Question1.class
-test\util\BillUtils.class
-test\application\MyApplication.class
