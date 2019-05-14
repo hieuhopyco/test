@@ -1,23 +1,22 @@
 package test.model;
 
-import java.util.List;
-
-public class Product {
+public abstract class Product {
     private long id;
     private String title;
     private double price;
-    private List<Category> categories;
 
     public Product() { }
 
-    public Product(final long id, final String title, final double price, final List<Category> categories) {
+    public Product(final long id, final String title, final double price) {
         super();
         this.id = id;
         this.title = title;
         this.price = price;
-        this.categories = categories;
     }
 
+    public abstract double getPriceAfterDiscount(final double percent);
+
+    // Getter - Setter
     public long getId() {
         return id;
     }
@@ -35,11 +34,5 @@ public class Product {
     }
     public void setPrice(final double price) {
         this.price = price;
-    }
-    public List<Category> getCategories() {
-        return categories;
-    }
-    public void setCategories(final List<Category> categories) {
-        this.categories = categories;
     }
 }

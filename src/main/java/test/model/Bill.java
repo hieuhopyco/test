@@ -7,6 +7,19 @@ public class Bill {
     private User customer;
     private List<Product> products;
 
+    public double calculateNetAmount() {
+        final double percentDiscount = customer.getPercentageDiscount();
+
+        final double totalBillAmountAfterPercentDiscount = products.stream().mapToDouble(o -> o.getPriceAfterDiscount(percentDiscount)).sum();
+        final double amountBaseDiscount = (int) totalBillAmountAfterPercentDiscount / 100 * 5;
+
+        System.out.println("totalBillAmountAfterPercentDiscount: " + totalBillAmountAfterPercentDiscount);
+        System.out.println("amountBaseDiscount: " + amountBaseDiscount);
+
+        return totalBillAmountAfterPercentDiscount - amountBaseDiscount;
+    }
+
+    //Getter - Setter
     public long getId() {
         return id;
     }

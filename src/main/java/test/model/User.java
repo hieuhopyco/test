@@ -2,35 +2,20 @@ package test.model;
 
 import java.util.Date;
 
-public class User {
+public abstract class User {
     private long id;
-    private boolean employee;
-    private boolean affiliate;
     private Date registeredDate;
 
-    public User() {
-    }
+    public User() { }
 
-    public User(final long id, final boolean employee, final boolean affiliate, final Date registeredDate) {
-        super();
+    public User(final long id, final Date registeredDate) {
         this.id = id;
-        this.employee = employee;
-        this.affiliate = affiliate;
         this.registeredDate = registeredDate;
     }
 
-    public boolean isEmployee() {
-        return employee;
-    }
-    public void setEmployee(final boolean employee) {
-        this.employee = employee;
-    }
-    public boolean isAffiliate() {
-        return affiliate;
-    }
-    public void setAffiliate(final boolean affiliate) {
-        this.affiliate = affiliate;
-    }
+    public abstract double getPercentageDiscount();
+
+    // Getter - Setter
     public Date getRegisteredDate() {
         return registeredDate;
     }
