@@ -7,7 +7,12 @@
 
 # Time and memory complexity analysis
 #### Question 1
-- load: Loop each line to create a map, with each line, loop throw each pair values to put into map, complexity is O(n^2)
+- load:
+Given n is number of characters of string input, to split a string by '\n' to array, it takes O(n).
+Given m is number of lines, then loop each line, call createMap function, it takes O(m)
+With each line, given k is number of character of line, to split line string by ';' to  get array of key-value pair, it takes O(k). Then loop throw each key-value pair to put into map, given l is number of key-value pair, it takes O(l).
+We have max(n, m, k, l) = n. So the complexity is O(n) + O(m) * [O(k) + O(l)] = O(n^2)
+
 - store: Loop throw each item in given array, with each item as a map, loop throw its entries to append string, complexity is O(n^2)
 
 # How to build project
